@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membership Website Sample</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],[type=password], select, textarea {
+    width: 120%
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] ,input[type=reset]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin:0 auto;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+
+<body>
+<center>
+<h2>SAMPLE WEBSITE FOR PROJECT</h2>
+</center>
+
+<div class="container">
+  <form  action="./welcome.php"  id="doit"  method="get" >
+   
+    
+      <div class="row">
+      <div class="col-25">
+        <label >User Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name"  >
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label >Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" id="passwrd" name="passwrd" >
+      </div>
+    </div>
+    
+   <div class="row">
+        <center>
+        <input type="submit" value="Login">  
+        
+        </center>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

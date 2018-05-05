@@ -31,4 +31,3 @@ https://github.com/sqlmapproject/sqlmap
 2.Add query lenght as 118th feature in the vector used for classification
 3.Now the code has to be run separately for malicious and non-malicious queries but can be run parallely and combined.
 
-used a tool known SQLMAP for injecting malicious into the website for generating training set malicious query

@@ -23,8 +23,9 @@ postgresql.conf  file has been edited to to get the query-tree in the required f
 The floder website contains a rudementry website coded in html and php used for generating training data. The file create.php is used for 
 creating username and password for all users in the movielens database.
 
-#Things I wanted to but couldn't do
+# Things I wanted to but couldn't do
 1.Use histogram model available in Postgres Sql.
 2.Add query lenght as 118th feature in the vector used for classification
 3.Now the code has to be run separately for malicious and non-malicious queries but can be run parallely and combined.
 
+used a tool known SQLMAP for injecting malicious into the website for generating training set malicious query
